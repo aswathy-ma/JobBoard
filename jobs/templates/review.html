@@ -44,8 +44,9 @@
         <button class="button is-link">Submit</button>
       </div>
       <div class="control">
-        <a href="{{ url_for('employer', employer_id=employer_id) }}" class="button is-text">Cancel</a>
+        <button class="button is-light" onclick="window.location.href='{{ url_for( 'employer', employer_id=employer_id ) }}';">Cancel</button>
       </div>
+     </div>
     </div>
   </form>
 {% endblock %}
